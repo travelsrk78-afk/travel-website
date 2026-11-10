@@ -1,4 +1,5 @@
 import { REVIEWS, WA, PHONE_TEL, PHONE_DISPLAY } from "../data.js";
+import LanguageSelect from "../components/LanguageSelect.jsx";
 
 const initials = n => n.split(" ").map(x => x[0]).slice(0, 2).join("").toUpperCase();
 
@@ -11,7 +12,8 @@ export default function ReviewsPage() {
             <img className="brand-logo" src={`${import.meta.env.BASE_URL}happy-car-travels-badge.png`} alt="Happy Car Travels - Vijayawada logo" width="44" height="44" />
             <span className="brand-text"><span className="brand-name">Happy Car Travels</span><span className="brand-tag">Vijayawada · Customer Reviews</span></span>
           </a>
-          <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+          <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center" }}>
+            <LanguageSelect />
             <a className="btn btn-sun btn-sm" href="feedback.html">Leave a review</a>
             <a className="btn btn-ghost btn-sm" href="index.html">Back to site</a>
           </div>

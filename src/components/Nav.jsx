@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { PHONE_TEL, PHONE_DISPLAY, EMAIL } from "../data.js";
+import LanguageSelect from "./LanguageSelect.jsx";
 
 const LINKS = [["#rates", "Rates"], ["#fleet", "Fleet"], ["#services", "Services"], ["#why", "Why us"], ["#gallery", "Gallery"], ["#reviews", "Reviews"], ["#faq", "FAQ"], ["#contact", "Contact"]];
 
@@ -14,6 +15,7 @@ export default function Nav() {
             <span>4.9 ★ rated · 4,000+ trips</span>
           </div>
           <div className="topbar-right">
+            <LanguageSelect />
             <a href={`tel:${PHONE_TEL}`}>{PHONE_DISPLAY}</a>
             <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
           </div>

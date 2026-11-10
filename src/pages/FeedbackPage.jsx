@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { WA, PHONE_TEL, PHONE_DISPLAY } from "../data.js";
+import LanguageSelect from "../components/LanguageSelect.jsx";
 
 export default function FeedbackPage() {
   const [f, setF] = useState({ name: "", phone: "", trip: "", rating: "5", comment: "" });
@@ -30,7 +31,8 @@ export default function FeedbackPage() {
             <img className="brand-logo" src={`${import.meta.env.BASE_URL}happy-car-travels-badge.png`} alt="Happy Car Travels - Vijayawada logo" width="44" height="44" />
             <span className="brand-text"><span className="brand-name">Happy Car Travels</span><span className="brand-tag">Vijayawada · Share Feedback</span></span>
           </a>
-          <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+          <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center" }}>
+            <LanguageSelect />
             <a className="btn btn-ghost btn-sm" href="reviews.html">Read reviews</a>
             <a className="btn btn-ghost btn-sm" href="index.html">Back to site</a>
           </div>
