@@ -20,9 +20,9 @@ export default function Nav() {
         </div>
       </div>
       <nav className="nav wrap" aria-label="Main">
-        <a className="brand" href="#top" aria-label="RK Travels - Tours, Travels and Self-Drive - home">
-          <img className="brand-logo" src="/rk-logo.jpg" alt="RK Travels logo" width="46" height="46" />
-          <span className="brand-text"><span className="brand-name">RK Travels</span><span className="brand-tag">Tours · Travels &amp; Self-Drive</span></span>
+        <a className="brand" href="#top" aria-label="Happy Car Travels - Vijayawada - Tours, Travels and Self-Drive - home">
+          <img className="brand-logo" src={`${import.meta.env.BASE_URL}happy-car-travels-badge.png`} alt="Happy Car Travels - Vijayawada logo" width="46" height="46" />
+          <span className="brand-text"><span className="brand-name">Happy Car Travels</span><span className="brand-tag">Vijayawada · Tours, Travels &amp; Self-Drive</span></span>
         </a>
         <button className="nav-toggle" aria-expanded={open} aria-controls="menu" aria-label={open ? "Close menu" : "Open menu"} onClick={() => setOpen(o => !o)}>
           <span /><span />

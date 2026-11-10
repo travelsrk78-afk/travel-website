@@ -60,7 +60,19 @@ export default function RouteMap() {
         <g className="stop" data-at=".36"><circle r="4.5" fill="#000000" opacity=".8" /></g>
         <g className="stop" data-at=".7"><circle r="4.5" fill="#000000" opacity=".8" /></g>
         <g className="stop" data-at="1"><circle r="6" fill="#DC2626" stroke="#000000" strokeWidth="1" /></g>
-        <g id="car-dot"><circle r="11" fill="#DC2626" opacity=".25" /><circle r="6" fill="#DC2626" /></g>
+        <g id="car-dot" aria-label="car">
+          <circle r="13" fill="#DC2626" opacity=".18" />
+          <g transform="translate(-11,-7) scale(0.92)">
+            <rect x="1" y="4" width="22" height="7" rx="2.2" fill="#DC2626" />
+            <path d="M5 4 L8 0.5 H16 L19 4 Z" fill="#0B4EA2" />
+            <rect x="8.2" y="1.2" width="3.2" height="2.6" rx="0.6" fill="#e0f2fe" />
+            <rect x="12.4" y="1.2" width="3.2" height="2.6" rx="0.6" fill="#e0f2fe" />
+            <circle cx="6.5" cy="11.5" r="2.1" fill="#111827" />
+            <circle cx="17.5" cy="11.5" r="2.1" fill="#111827" />
+            <circle cx="6.5" cy="11.5" r="0.8" fill="#94a3b8" />
+            <circle cx="17.5" cy="11.5" r="0.8" fill="#94a3b8" />
+          </g>
+        </g>
       </svg>
       <span className="tag t0">Vijayawada</span>
       <span className="tag t1">Nandigama</span>

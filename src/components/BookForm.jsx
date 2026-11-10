@@ -28,7 +28,7 @@ export default function BookForm({ prefill }) {
   const submit = e => {
     e.preventDefault();
     const when = new Date(f.date + "T00:00").toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" });
-    const msg = `Hi RK Travels (Tours, Travels & Self-Drive), I'd like a fare.\n${f.trip}: ${f.from} to ${f.to}\nDate: ${when}\nCar: ${f.car}${f.name ? `\nName: ${f.name}` : ""}`;
+    const msg = `Hi Happy Car Travels - Vijayawada (Tours, Travels & Self-Drive), I'd like a fare.\n${f.trip}: ${f.from} to ${f.to}\nDate: ${when}\nCar: ${f.car}${f.name ? `\nName: ${f.name}` : ""}`;
     window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, "_blank", "noopener");
   };
 

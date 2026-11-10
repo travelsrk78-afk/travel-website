@@ -101,7 +101,7 @@ export function Why() {
     <Reveal className="wrap" id="why" aria-labelledby="why-h">
       <div className="why">
         <div>
-          <p className="eyebrow">Why RK Travels</p>
+          <p className="eyebrow">Why Happy Car Travels</p>
           <h2 id="why-h" className="sec-title tight">You deal with the owner, not a call centre.</h2>
           <p className="lead sm">We own the cars and manage the drivers ourselves. If something changes on your trip, you call one number and the person who picks up can fix it.</p>
           <div className="why-stats">
@@ -117,19 +117,24 @@ export function Why() {
 }
 
 export function Reviews() {
+  const featured = REVIEWS.slice(0, 6);
   return (
     <Reveal className="wrap" id="reviews" aria-labelledby="rev-h">
       <p className="eyebrow">Customer reviews</p>
       <h2 id="rev-h" className="sec-title">What riders say</h2>
       <p className="sec-sub">4.9 out of 5 from 247 verified reviews.</p>
       <div className="reviews">
-        {REVIEWS.map(([q, n, w]) => (
-          <blockquote key={n} className="card">
+        {featured.map(([q, n, w], i) => (
+          <blockquote key={n + i} className="card">
             <span className="stars" aria-label="5 out of 5 stars">★★★★★</span>
             <p>{q}</p>
             <footer><span className="avatar">{initials(n)}</span><span><b>{n}</b>{w}</span></footer>
           </blockquote>
         ))}
+      </div>
+      <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 22 }}>
+        <a className="btn btn-ghost" href="reviews.html">View all reviews</a>
+        <a className="btn btn-sun" href="feedback.html">Share feedback / review</a>
       </div>
     </Reveal>
   );
@@ -158,7 +163,7 @@ export function Contact() {
           <h2 id="contact-h" className="sec-title tight">Tell us where you're going.</h2>
           <p className="lead sm">Open every hour of every day. Message on WhatsApp for the fastest reply — most trips are confirmed within minutes.</p>
           <div className="cta-row">
-            <a className="btn btn-sun" href={`https://wa.me/${WA}?text=${encodeURIComponent("Hi RK Travels — Tours, Travels & Self-Drive, I need a taxi.")}`} target="_blank" rel="noopener">WhatsApp us</a>
+            <a className="btn btn-sun" href={`https://wa.me/${WA}?text=${encodeURIComponent("Hi Happy Car Travels - Vijayawada — Tours, Travels & Self-Drive, I need a taxi.")}`} target="_blank" rel="noopener">WhatsApp us</a>
             <a className="btn btn-ghost" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
           </div>
         </div>

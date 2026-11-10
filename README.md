@@ -1,4 +1,4 @@
-# Best Car Travels (React + Vite + Firebase backend)
+# Happy Car Travels - Vijayawada (React + Vite + Firebase backend)
 
 React front end. Firebase is used **only as the backend**: Firestore (database) and
 Authentication (admin login). Nothing is hosted on Firebase, so you can put the built

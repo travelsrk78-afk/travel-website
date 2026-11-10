@@ -132,7 +132,7 @@ export default function Admin() {
   return (
     <>
       <header className="nav-wrap"><nav className="nav">
-        <a className="brand" href="index.html"><img className="brand-logo" src="/rk-logo.jpg" alt="RK Travels logo" width="44" height="44" /><span className="brand-text"><span className="brand-name">RK Travels</span><span className="brand-tag">Tours, Travels &amp; Self-Drive</span></span></a>
+        <a className="brand" href="index.html"><img className="brand-logo" src={`${import.meta.env.BASE_URL}happy-car-travels-badge.png`} alt="Happy Car Travels - Vijayawada logo" width="44" height="44" /><span className="brand-text"><span className="brand-name">Happy Car Travels</span><span className="brand-tag">Vijayawada · Tours, Travels &amp; Self-Drive</span></span></a>
         <a className="btn btn-ghost btn-sm" href="index.html">View site</a>
       </nav></header>
 

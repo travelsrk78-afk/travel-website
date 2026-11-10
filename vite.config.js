@@ -12,6 +12,8 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "index.html"),
         admin: resolve(__dirname, "admin.html"),
+        reviews: resolve(__dirname, "reviews.html"),
+        feedback: resolve(__dirname, "feedback.html"),
       },
     },
   },

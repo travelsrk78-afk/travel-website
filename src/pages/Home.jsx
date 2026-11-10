@@ -20,7 +20,7 @@ export default function Home() {
             <span className="hero-badge"><i /> Owner-run since 2018 · Vijayawada, AP &amp; Telangana</span>
             <p className="telugu" lang="te">ప్రయాణం సుఖంగా</p>
             <h1>Leave Vijayawada with a driver you can <span>call by name.</span></h1>
-            <p className="lead">RK Travels — Tours, Travels &amp; Self-Drive. Outstation and local cabs across Andhra Pradesh and Telangana. Fixed all-inclusive fares, police-verified drivers, GPS on every car. <em>Your Journey, Our Passion!</em></p>
+            <p className="lead">Happy Car Travels - Vijayawada — Tours, Travels &amp; Self-Drive. Outstation and local cabs across Andhra Pradesh and Telangana. Fixed all-inclusive fares, police-verified drivers, GPS on every car. <em>Your Journey, Our Passion!</em></p>
             <div className="hero-cta">
               <a className="btn btn-sun" href="#book">Get an instant fare</a>
               <a className="btn btn-ghost" href="#rates">View rates</a>
@@ -48,7 +48,7 @@ export default function Home() {
       <footer className="foot">
         <div className="foot-in">
           <div>
-            <span className="foot-brand"><img src="/rk-logo.jpg" alt="" width="42" height="42" /> RK Travels</span>
+            <span className="foot-brand"><img src={`${import.meta.env.BASE_URL}happy-car-travels-badge.png`} alt="" width="42" height="42" /> Happy Car Travels - Vijayawada</span>
             <p>Tours, Travels &amp; Self-Drive. Owner-run taxi and outstation cabs from Vijayawada. Your Journey, Our Passion!</p>
           </div>
           <div>
@@ -70,7 +70,7 @@ export default function Home() {
           </div>
         </div>
         <div className="foot-bottom">
-          <span>© {new Date().getFullYear()} RK Travels — Tours, Travels &amp; Self-Drive. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} Happy Car Travels - Vijayawada — Tours, Travels &amp; Self-Drive. All rights reserved.</span>
           <a href="admin.html" className="adminlink" rel="nofollow">Staff login</a>
         </div>
       </footer>
